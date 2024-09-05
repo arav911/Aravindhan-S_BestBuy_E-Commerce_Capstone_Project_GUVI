@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="base.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="tests.LoginTests">
+        <methods>
+          <include name="entering_Valid_User_Details"/>
+          <include name="launchApplication"/>
+          <include name="entering_Symbolic_value_in_each_Field"/>
+          <include name="quitBrowser"/>
+          <include name="entering_Invalid_Password"/>
+          <include name="entering_numerical_value_in_each_Field"/>
+          <include name="entering_AlphaNumeric_value_in_each_Field"/>
+          <include name="entering_Invalid_User_Name"/>
+        </methods>
+      </class> <!-- tests.LoginTests -->
+      <class name="tests.BestBuyECommerceApplicationTests">
+        <methods>
+          <include name="search_for_and_Add_an_Item_to_Shopping_Cart"/>
+          <include name="launchApplication"/>
+          <include name="quitBrowser"/>
+          <include name="navigation_of_all_Menu_and_Validation_of_Title_in_each_Page"/>
+          <include name="search_for_and_Add_an_Item_to_Shopping_Cart_from_Any_Brands_Menu"/>
+          <include name="proceed_to_Payment_with_Invalid_Details_after_Items_added_to_Cart"/>
+          <include name="search_for_and_Add_an_Item_to_Shopping_Cart_from_Shop_by_Department_Menu"/>
+          <include name="proceed_to_Payment_with_Valid_Details_after_Items_added_to_Cart"/>
+        </methods>
+      </class> <!-- tests.BestBuyECommerceApplicationTests -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
